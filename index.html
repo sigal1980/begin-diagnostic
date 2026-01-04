@@ -1,20 +1,39 @@
 <html>
   <head>
     <title>Шпаргалка</title>
+    <style>
+      #menu {
+        width: 200px;
+        height: 100%
+        border: none;
+        white-space: pre;
+      }
+      #main {
+        display: flex;
+        height: 97vh;
+        border: none;
+      }
+      #content {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+    </style>
   </head>
   <body>
-    <iframe name="menu"
-            src="menu.html"
-            height="30px"
-            width="100%"
-            style="border: none;">
-    </iframe>
-    <br>
-    <iframe name="content"
-            src="content.html"
-            height="95%"
-            width="100%"
-            style="border: none;">
-    </iframe>
+    <div id="main">
+      <div id="menu">
+<a href="./content.html" target="content">Шпаргалка</a>
+  <a href="./elektronics/index.html" target="content">Электроника</a>
+    <a href="./elektronics/mcu/index.html" target="content">Микроконтроллеры</a>
+      <a href="./elektronics/mcu/stm8/index.html" target="content">STM8</a>
+      </div>
+      <iframe id="content"
+              name="content"
+              src="./content.html">
+      </iframe>
+
+    </div>
   </body>
 </html>
