@@ -1,1 +1,1 @@
-# begin-diagnostic
+# Шпаргалка
